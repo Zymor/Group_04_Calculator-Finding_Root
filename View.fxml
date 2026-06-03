@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
+   <children>
+      <Label layoutX="187.0" layoutY="71.0" text="Find-Root-Calculator" textFill="#d15d9d">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="textField_num1" layoutX="84.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="231.0" layoutY="176.0" text="+">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="417.0" layoutY="176.0" text="=">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_result" layoutX="179.0" layoutY="176.0" prefHeight="26.0" prefWidth="43.0" text="x^2">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_result" layoutX="337.0" layoutY="277.0" mnemonicParsing="false" onAction="#on_calculate" text="Result">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textField_num2" layoutX="275.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label_result1" layoutX="376.0" layoutY="180.0" text="x">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_result11" layoutX="476.0" layoutY="179.0" text="0">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_result2" layoutX="163.0" layoutY="264.0" prefHeight="26.0" prefWidth="79.0" text="x_1 = ">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_result21" layoutX="163.0" layoutY="305.0" prefHeight="26.0" prefWidth="79.0" text="x_2 = ">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_result22" layoutX="59.0" layoutY="229.0" prefHeight="28.0" prefWidth="108.0" text="Solution">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
