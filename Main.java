@@ -1,9 +1,23 @@
 import java.util.Scanner;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        launch(args);
+    }
 
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene.fxml"));
+        Scene scene = new Scene(loader.load());
+        primaryStage.setTitle("Quadratic Equation Solver");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+}
         System.out.println("--- Mini Project: Quadratic Equation Solver ---");
         System.out.println("Equation format: Ax^2 + Bx + C = 0\n");
 
