@@ -35,7 +35,7 @@
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="button_result" layoutX="337.0" layoutY="277.0" mnemonicParsing="false" onAction="#on_calculate" text="Result">
+      <Button fx:id="button_result" layoutX="95.0" layoutY="277.0" mnemonicParsing="false" onAction="#on_calculate" text="Result">
          <font>
             <Font size="14.0" />
          </font>
@@ -55,12 +55,12 @@
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="label_result2" layoutX="163.0" layoutY="264.0" prefHeight="26.0" prefWidth="79.0" text="x_1 = ">
+      <Label fx:id="label_result2" layoutX="245.0" layoutY="267.0" prefHeight="26.0" prefWidth="79.0" text="x_1 = ">
          <font>
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="label_result21" layoutX="163.0" layoutY="305.0" prefHeight="26.0" prefWidth="79.0" text="x_2 = ">
+      <Label fx:id="label_result21" layoutX="245.0" layoutY="321.0" prefHeight="26.0" prefWidth="79.0" text="x_2 = ">
          <font>
             <Font name="Times New Roman" size="24.0" />
          </font>
@@ -70,5 +70,15 @@
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
+      <TextField fx:id="textField_num11" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField_num111" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
