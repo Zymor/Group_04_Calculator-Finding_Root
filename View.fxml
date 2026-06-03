@@ -14,7 +14,7 @@
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
       <TextField fx:id="textField_num1" layoutX="84.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
          <font>
             <Font size="16.0" />
@@ -45,7 +45,7 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <Label fx:id="label_result1" layoutX="376.0" layoutY="180.0" text="x">
+      <Label fx:id="label_result1" layoutX="371.0" layoutY="179.0" text="x">
          <font>
             <Font name="Times New Roman" size="24.0" />
          </font>
@@ -65,17 +65,17 @@
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="label_result22" layoutX="59.0" layoutY="229.0" prefHeight="28.0" prefWidth="108.0" text="Solution">
+      <Label fx:id="label_result22" layoutX="59.0" layoutY="229.0" prefHeight="28.0" prefWidth="108.0" text="Solution" textFill="#c42baa">
          <font>
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="textField_num11" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0">
+      <TextField fx:id="textField_num11" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofX1">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="textField_num111" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0">
+      <TextField fx:id="textField_num22" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofX2">
          <font>
             <Font size="16.0" />
          </font>
