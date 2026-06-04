@@ -42,20 +42,6 @@
       </font>
     </TextField>
     
-    <!-- x = label -->
-    <Label fx:id="label_x" layoutX="377.0" layoutY="179.0" prefHeight="28.0" prefWidth="86.0" text="x =">
-      <font>
-        <Font name="Times New Roman" size="24.0" />
-      </font>
-    </Label>
-    
-    <!-- = 0 label -->
-    <Label fx:id="label_0" layoutX="476.0" layoutY="179.0" text="0">
-      <font>
-        <Font name="Times New Roman" size="24.0" />
-      </font>
-    </Label>
-    
     <!-- Solution title -->
     <Label fx:id="label_solution" layoutX="59.0" layoutY="229.0" prefHeight="28.0" prefWidth="108.0" text="Solution" textFill="#c42baa">
       <font>
@@ -71,7 +57,7 @@
     </Label>
     
     <!-- Result field for x₁ answer -->
-    <TextField fx:id="result_num1" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofx1" editable="false">
+    <TextField fx:id="result_num1" editable="false" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofx1">
       <font>
         <Font size="16.0" />
       </font>
@@ -85,7 +71,7 @@
     </Label>
     
     <!-- Result field for x₂ answer -->
-    <TextField fx:id="result_num2" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofx2" editable="false">
+    <TextField fx:id="result_num2" editable="false" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofx2">
       <font>
         <Font size="16.0" />
       </font>
@@ -97,6 +83,21 @@
         <Font size="14.0" />
       </font>
     </Button>
+      <Label fx:id="label_x21" layoutX="374.0" layoutY="176.0" prefHeight="28.0" prefWidth="103.0" text="x +">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField_num3" layoutX="426.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label_x211" layoutX="514.0" layoutY="176.0" prefHeight="28.0" prefWidth="103.0" text="= 0">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
     
   </children>
 </AnchorPane>
