@@ -7,68 +7,96 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
-   <children>
-      <Label fx:id="label_findroot" layoutX="187.0" layoutY="71.0" text="Find-Root-Calculator" textFill="#d15d9d">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField fx:id="textField_num1" layoutX="84.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-      <Label fx:id="label_x2" layoutX="179.0" layoutY="176.0" prefHeight="28.0" prefWidth="103.0" text="x^2   +">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <Button fx:id="button_result" layoutX="95.0" layoutY="277.0" mnemonicParsing="false" onAction="#on_calculate" text="Result">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <TextField fx:id="textField_num2" layoutX="275.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-      <Label fx:id="label_X" layoutX="377.0" layoutY="179.0" prefHeight="28.0" prefWidth="86.0" text="x  =">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="label_0" layoutX="476.0" layoutY="179.0" text="0">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="label_resultofX1" layoutX="245.0" layoutY="267.0" prefHeight="26.0" prefWidth="79.0" text="x_1 = ">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="label_resultofX2" layoutX="245.0" layoutY="321.0" prefHeight="26.0" prefWidth="79.0" text="x_2 = ">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="label_solution" layoutX="59.0" layoutY="229.0" prefHeight="28.0" prefWidth="108.0" text="Solution" textFill="#c42baa">
-         <font>
-            <Font name="Times New Roman" size="24.0" />
-         </font>
-      </Label>
-      <TextField fx:id="result_num1" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofX1">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="result_num2" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofX2">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  
+  <children>
+    
+    <!-- Title -->
+    <Label fx:id="label_findroot" layoutX="187.0" layoutY="71.0" text="Find-Root-Calculator" textFill="#d15d9d">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- Image -->
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+    
+    <!-- Input field for A (coefficient of x²) -->
+    <TextField fx:id="textField_num1" layoutX="84.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </TextField>
+    
+    <!-- x² + label -->
+    <Label fx:id="label_x2" layoutX="179.0" layoutY="176.0" prefHeight="28.0" prefWidth="103.0" text="x^2 +">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- Input field for B (coefficient of x) -->
+    <TextField fx:id="textField_num2" layoutX="275.0" layoutY="166.0" prefHeight="47.0" prefWidth="79.0">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </TextField>
+    
+    <!-- x = label -->
+    <Label fx:id="label_x" layoutX="377.0" layoutY="179.0" prefHeight="28.0" prefWidth="86.0" text="x =">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- = 0 label -->
+    <Label fx:id="label_0" layoutX="476.0" layoutY="179.0" text="0">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- Solution title -->
+    <Label fx:id="label_solution" layoutX="59.0" layoutY="229.0" prefHeight="28.0" prefWidth="108.0" text="Solution" textFill="#c42baa">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- x₁ = label -->
+    <Label fx:id="label_resultofx1" layoutX="245.0" layoutY="267.0" prefHeight="26.0" prefWidth="79.0" text="x₁ =">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- Result field for x₁ answer -->
+    <TextField fx:id="result_num1" layoutX="315.0" layoutY="263.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofx1" editable="false">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </TextField>
+    
+    <!-- x₂ = label -->
+    <Label fx:id="label_resultofx2" layoutX="245.0" layoutY="321.0" prefHeight="26.0" prefWidth="79.0" text="x₂ =">
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    
+    <!-- Result field for x₂ answer -->
+    <TextField fx:id="result_num2" layoutX="315.0" layoutY="317.0" prefHeight="30.0" prefWidth="68.0" promptText="resultofx2" editable="false">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </TextField>
+    
+    <!-- Calculate Button (FIXED: removed onClick, kept only onAction) -->
+    <Button fx:id="button_result" layoutX="95.0" layoutY="277.0" mnemonicParsing="false" onAction="#on_calculate" text="Result">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    
+  </children>
 </AnchorPane>
