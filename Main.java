@@ -7,7 +7,7 @@ public class Main extends Application {
     
     public static void main(String[] args) {
         System.out.println("Starting Quadratic Equation Solver...");
-        System.out.println("Program will solve equations of form: Ax² + Bx = 0");
+        System.out.println("Program will solve equations of form: Ax^2 + Bx + C = 0");
         launch(args);
     }
     
