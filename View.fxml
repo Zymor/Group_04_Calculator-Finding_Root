@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -98,6 +99,16 @@
             <Font name="Times New Roman" size="24.0" />
          </font>
       </Label>
+      <ImageView fitHeight="121.0" fitWidth="117.0" layoutX="25.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photo/Logo-ITC-PNG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="117.0" layoutX="434.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photo/Logo-GTR-JPG.jpg" />
+         </image>
+      </ImageView>
     
   </children>
 </AnchorPane>
